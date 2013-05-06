@@ -1,1 +1,20 @@
-??/??/2013 - v1.0-alpha
+??/??/2013 - v1.0-alpha1
+	* CLI
+	* Configuration file ($HOME/.config)
+	* Configure script
+	
+??/??/2013 - v1.0-alpha2
+	* Daemon (for automatic scan)
+	* Log file
+	* Scan with pthread (??)
+	* Encrypted DB (??)
+	
+*********************************************
+* ToDo:
+* - with manual scan if hash is different prompt the action that have to be done (U update, D delete, I ignore for example)
+* - with automatic scan if hash is different read the action that have to be done from configuration file
+* - The log file report the Update/Deleted/Ignored files
+* - Configuration file will have: 1) action to do when file hash is different from previous one; 2) daemon execution interval?;
+* - To do the scan more quickly i can split the scan into 2 part with pthread (P1: start->50% -- P2: 50%+1->end)
+* - Database is encryped so it cannot be modified
+*********************************************
